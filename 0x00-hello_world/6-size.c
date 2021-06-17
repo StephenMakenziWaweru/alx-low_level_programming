@@ -1,5 +1,5 @@
 /*
- * File : 6-size.c 
+ * File : 6-size.c
  * Auth: Stephen Waweru <stevomakenzi@gmail.com>
  */
 
@@ -7,7 +7,7 @@
 
 /**
  * main - Prints the sizes of various data types.
- * 
+ *
  * Return: Always 0.
  */
 int main(void)
