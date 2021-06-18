@@ -8,7 +8,7 @@
 /**
  * main - Prints all combinantions of digits followed by newline.
  *
- * returns: Always 0.
+ * Return: Always 0.
  */
 int main(void)
 {
