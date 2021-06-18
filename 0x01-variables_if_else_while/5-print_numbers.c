@@ -6,13 +6,14 @@
 #include <stdio.h>
 
 /**
- * Main - Prints all base 10 digits followed by a new line.
+ * main - Prints all base 10 digits followed by a new line.
  *
- * Returns: Always 0. 
+ * Return: Always 0.
  */
 int main(void)
-{	
+{
 	int i = 0;
+
 	while (i <= 9)
 	{
 		printf("%d", i);

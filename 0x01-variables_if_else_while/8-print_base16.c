@@ -6,12 +6,12 @@
 #include <stdio.h>
 
 /**
- * Main - Prints all base 16 digits followed by a new line.
+ * main - Prints all base 16 digits followed by a new line.
  *
- * Returns: Always 0. 
+ * Return: Always 0.
  */
 int main(void)
-{	
+{
 	char i = '0';
 
 	while (i <= '9')
@@ -19,9 +19,9 @@ int main(void)
 		putchar(i);
 		i++;
 	}
-	
+
 	i = 'a';
-	
+
 	while (i <= 'f')
 	{
 		putchar(i);

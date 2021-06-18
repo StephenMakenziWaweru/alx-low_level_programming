@@ -6,9 +6,9 @@
 #include <stdio.h>
 
 /**
- * Main - Prints an alphabet in lowercase except q & e followed by a new line.
+ * main - Prints an alphabet in lowercase except q & e followed by a new line.
  *
- * Returns: Always 0. 
+ * Return: Always 0.
  */
 int main(void)
 {	char i;

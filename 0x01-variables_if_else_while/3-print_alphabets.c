@@ -6,9 +6,9 @@
 #include <stdio.h>
 
 /**
- * Main - prints the the alphabet in lowercase then in uppercase
- * 
- * Returns: Always 0.
+ * main - prints the the alphabet in lowercase then in uppercase
+ *
+ * Return: Always 0.
  */
 int main(void)
 {
@@ -23,10 +23,10 @@ int main(void)
 	i = 'A';
 
 	while (i <= 'Z')
-        {
-                   putchar(i);
-                   i++;
-        }
+	{
+		putchar(i);
+		i++;
+	}
 		putchar('\n');
 
 	return (0);
