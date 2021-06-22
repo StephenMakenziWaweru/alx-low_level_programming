@@ -3,23 +3,21 @@
  * Auth: Stephen Waweru
  */
 
-#include <stdio.h>
+#include "holberton.h"
 
 /**
- * main - Prints lowercase alphabet letters followed by a new line
+ * print_alphabet - Prints lowercase alphabet letters followed by a new line
  *
- * Return: Always 0.
+ * Return: On success 1.
  */
-int main(void)
+void print_alphabet(void)
 {
 	char i = 'a';
 
 	while (i <= 'z')
 	{
-		putchar(i);
+		_putchar(i);
 		i++;
 	}
-	putchar('\n');
-
-	return (0);
+	_putchar('\n');
 }

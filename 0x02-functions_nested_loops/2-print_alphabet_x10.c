@@ -3,14 +3,14 @@
  * Auth: Stephen Waweru
  */
 
-#include <stdio.h>
+#include "holberton.h"
 
 /**
- * main - Prints lowercase alphabet letters 10x followed by a new line
+ * print_alphabet_x10 - Prints lowercase alphabet letters 10x followed by a new line
  *
- * Return: Always 0.
+ * Return: success 1.
  */
-int main(void)
+void print_alphabet_x10(void)
 {
 	char j = 0;
 
@@ -20,12 +20,10 @@ int main(void)
 
         	while (i <= 'z')
         	{
-                	putchar(i);
+                	_putchar(i);
                 	i++;
         	}
 		j++;
-		putchar('\n');
+		_putchar('\n');
 	}
-
-	return (0);
 }
