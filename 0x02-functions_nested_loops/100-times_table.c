@@ -1,51 +1,118 @@
 #include "holberton.h"
+/**
+ *powB - raises the number base to power power
+ *@base : the base
+ *@power : the power
+ *Return: return the answer
+ */
+int powB(int base, int power)
+{
+	int i, prod = 1;
+
+	for (i = 0; i < power; i++)
+	{
+		prod = prod * base;
+	}
+	return (prod);
+}
 
 /**
- * print_times_table - prints the times table up to the integer input
- * @n: integer input
- *
- * Return: void
+ *numLength - returns the lenth of string
+ *@num : operand number
+ *Return: number of digits
  */
+int numLength(int num)
+{
+	int length = 0;
 
+	if (!num)
+	{
+		return (1);
+	}
+
+	while (num)
+	{
+		num = num / 10;
+		length += 1;
+	}
+
+
+	return (length);
+}
+
+/**
+ *putnchar - Print a number of any any digit
+ *@num : takes an input number
+ *
+ *
+ */
+void putnchar(int num)
+{
+
+	int length = numLength(num), j = length - 1, k, tmp2, digit1;
+
+	if (num == 0)
+		_putchar(48);
+	else
+	{
+
+		while (j >= 0)
+		{
+			if (num % powB(10, j) == 0 && j != 0)
+			{
+				_putchar(48 + num / powB(10, j));
+				for (k = j; k > 0 ; k--)
+				{
+					_putchar(48);
+				}
+				j = -1;
+			}
+			else
+			{
+				digit1 = num / powB(10, j);
+				_putchar(digit1 + 48);
+				tmp2 = num;
+				num -= powB(10, j) * digit1;
+				if (numLength(tmp2) - numLength(num) == 2)
+				{
+					_putchar(48);
+					j--;
+				}
+				j--;
+			}
+		}
+	}
+
+}
+
+/**
+ * print_times_table - print multiplication table for factor of n
+ * @n: integer n
+ */
 void print_times_table(int n)
 {
-	int a, b, c, d, e, f;
+	int i, j, prod, m;
 
-	if (n >= 0 && n < 15)
+	if (n < 16 && n >= 0)
 	{
-		for (a = 0; a <=  n; a++)
+		for (i = 0; i <= n; i++)
 		{
-			for (b = 0; b <= n; b++)
+			for (j = 0; j <= n; j++)
 			{
-				c = a * b; d = c / 100; e = (c /  10) % 10;
-				f = (c % 100) % 10;
-				if (b == 0)
+				prod = i * j;
+				putnchar(prod);
+				if (j != n)
 				{
-					_putchar('0');
+					_putchar(',');
+
+					for (m = 0; m < 4 - numLength(i * (j + 1)); m++)
+					{
+						_putchar(' ');
+					}
 				}
-				else if (c < 10)
-				{
-					_putchar(' '); _putchar(' ');
-					_putchar('0' + f);
-				}
-				else if (c < 100)
-				{
-					_putchar(' ');
-					_putchar('0' + e); _putchar('0' + f);
-				}
-				else
-				{
-					_putchar('0' + d);
-					_putchar('0' + e);
-					_putchar('0' + f);
-				}
-				if (b < n)
-				{
-					_putchar(','); _putchar(' ');
-				}
-				else
-					_putchar('\n');
+
 			}
+			_putchar('\n');
 		}
 	}
 }
