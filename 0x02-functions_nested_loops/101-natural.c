@@ -23,4 +23,6 @@ int main(void)
 		n++;
 	}
 	printf("%d\n", sum);
+
+	return (0);
 }
