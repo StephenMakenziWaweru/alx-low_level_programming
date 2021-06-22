@@ -6,7 +6,8 @@
 #include "holberton.h"
 
 /**
- * print_alphabet_x10 - Prints lowercase alphabet letters 10x followed by a new line
+ * print_alphabet_x10 - Prints lowercase alphabet letters 10x followed by a
+ * new line
  *
  * Return: success 1.
  */
@@ -18,11 +19,11 @@ void print_alphabet_x10(void)
 	{
 		char i = 'a';
 
-        	while (i <= 'z')
-        	{
-                	_putchar(i);
-                	i++;
-        	}
+		while (i <= 'z')
+		{
+			_putchar(i);
+			i++;
+		}
 		j++;
 		_putchar('\n');
 	}
