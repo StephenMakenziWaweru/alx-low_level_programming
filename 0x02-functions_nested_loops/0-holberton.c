@@ -3,7 +3,7 @@
  * Auth: Stephen Waweru
  */
 
-#include <stdio.h>
+#include "holberton.h"
 
 /**
  * main - Prints "Holberton" followed by a new line
@@ -12,7 +12,15 @@
  */
 int main(void)
 {
-	printf("Holberton\n");
+	char i[] = "Holberton";
+	int j = 0;
+
+	while (j <= sizeof(i))
+	{
+		_putchar(i[j]);
+		j++;
+	}
+	_putchar('\n');
 
 	return (0);
 }
