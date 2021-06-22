@@ -15,7 +15,7 @@ int main(void)
 	char i[] = "Holberton";
 	int j = 0;
 
-	while (j <= sizeof(i))
+	while (j <= 8)
 	{
 		_putchar(i[j]);
 		j++;
