@@ -1,4 +1,4 @@
-***0x03. C - Debugging***
+**0x03. C - Debugging**
 
 **Learning Objectives**
 
@@ -11,6 +11,7 @@ At the end of this project, you are expected to be able to explain to anyone, wi
     How to read the error messages
 
 **Requirements**
+
 *General*
 
     Allowed editors: vi, vim, emacs
