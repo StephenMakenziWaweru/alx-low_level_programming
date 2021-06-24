@@ -10,3 +10,5 @@ Low level programming using the C language.
 
 [3. 0x03-debugging](/0x03-debugging)
 
+[4. 0x04-more_functions_nested_loops](/0x04-more_functions_nested_loops)
+
