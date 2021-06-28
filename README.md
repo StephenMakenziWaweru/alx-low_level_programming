@@ -12,3 +12,5 @@ Low level programming using the C language.
 
 [4. 0x04-more_functions_nested_loops](/0x04-more_functions_nested_loops)
 
+[5. 0x05-pointers_arrays_strings](/0x05-pointers_arrays_strings)
+
