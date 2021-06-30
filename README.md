@@ -14,3 +14,4 @@ Low level programming using the C language.
 
 [5. 0x05-pointers_arrays_strings](/0x05-pointers_arrays_strings)
 
+[6. 0x06-pointers_arrays_strings](/0x06-pointers_arrays_strings)
