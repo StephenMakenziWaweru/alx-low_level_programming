@@ -19,3 +19,5 @@ Low level programming using the C language.
 [7. 0x07-pointers_arrays_strings](/0x07-pointers_arrays_strings)
 
 [8. 0x08-recursion](/0x08-recursion)
+
+[9. 0x09-static_libraries](/0x09-static_libraries)
