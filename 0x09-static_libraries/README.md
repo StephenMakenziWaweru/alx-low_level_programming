@@ -1,6 +1,6 @@
 **0x09. C - Static libraries**
 
-**200~Tasks**
+**Tasks**
 
 0. A library is not a luxury but one of the necessities of life 
 	- Create the static library libholberton.a containing all the functions listed below:
