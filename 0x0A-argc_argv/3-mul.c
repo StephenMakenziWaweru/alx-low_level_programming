@@ -17,7 +17,7 @@ int main(int argc, char *argv[])
 		mulp = atoi(argv[1]) * atoi(argv[2]);
 		printf("%d\n", mulp);
 	}
-	else 
+	else
 		printf("Error\n");
 
 	return (0);
