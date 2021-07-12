@@ -10,7 +10,7 @@
 
 int main(int argc, char *argv[])
 {
-	int sum, i = 1, j, a = 1;
+	int sum = 0, i = 1, j, a = 1;
 
 	/* loop to see if all args are numbers */
 
@@ -20,7 +20,7 @@ int main(int argc, char *argv[])
 		{
 			for (j = 0; argv[i][j]; j++)
 			{
-				if (!(isdigit(argv[i][j])))
+				if ((isdigit(argv[i][j])) == 0)
 				{
 					printf("Error\n");
 					return (1);
