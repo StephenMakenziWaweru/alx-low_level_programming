@@ -15,12 +15,12 @@ int main(int argc, char *argv[])
 	/* loop to see if all args are numbers */
 
 	if (argc > 1)
-	{	
+	{
 		while (i < argc)
 		{
 			if (*argv[i] >= '0' && *argv[i] <= '9')
 				sum += atoi(argv[i]);
-			else 
+			else
 			{
 				printf("Error\n");
 
@@ -30,10 +30,10 @@ int main(int argc, char *argv[])
 		}
 
 		printf("%d\n", sum);
-		
+
 	}
 	else
 		printf("0\n");
-	
-	return (0);	
+
+	return (0);
 }
