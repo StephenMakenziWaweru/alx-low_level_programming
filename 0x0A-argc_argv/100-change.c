@@ -15,7 +15,7 @@ int main(int argc, char *argv[])
 
 	int cents = 0;
 
-	if (argc > 1)
+	if (argc == 2)
 	{
 		amount = atoi(argv[1]);
 
