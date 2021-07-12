@@ -11,7 +11,7 @@
 
 int main(int argc, char *argv[])
 {
-	UNUSED(argc);	
+	UNUSED(argc);
 	printf("%s\n", argv[0]);
 
 
