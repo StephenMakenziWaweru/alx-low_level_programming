@@ -10,7 +10,7 @@
 
 int main(int argc, char *argv[])
 {
-	int sum, i = 1;
+	int sum, i = 1, j, a = 1;
 
 	/* loop to see if all args are numbers */
 
@@ -18,17 +18,21 @@ int main(int argc, char *argv[])
 	{
 		while (i < argc)
 		{
-			if (*argv[i] >= '0' && *argv[i] <= '9')
-				sum += atoi(argv[i]);
-			else
+			for (j = 0; argv[i][j]; j++)
 			{
-				printf("Error\n");
-
-				return (1);
+				if (!(isdigit(argv[i][j])))
+				{
+					printf("Error\n");
+					return (1);
+				}
 			}
+
 			i++;
 		}
-
+		while (a < argc)
+		{
+			sum += atoi(argv[a]);
+		}
 		printf("%d\n", sum);
 
 	}
