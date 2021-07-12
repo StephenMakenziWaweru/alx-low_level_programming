@@ -32,6 +32,7 @@ int main(int argc, char *argv[])
 		while (a < argc)
 		{
 			sum += atoi(argv[a]);
+			a++;
 		}
 		printf("%d\n", sum);
 
