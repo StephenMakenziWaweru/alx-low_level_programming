@@ -20,7 +20,10 @@ int main(int argc, char *argv[])
 		amount = atoi(argv[1]);
 
 		if (amount < 0)
+		{
 			printf("0\n");
+			return (1);
+		}
 		else
 		{
 			cents = amount / 25;
