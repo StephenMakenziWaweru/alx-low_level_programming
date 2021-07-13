@@ -1,45 +1,45 @@
 #include "holberton.h"
-#include <stdlib.h>
-/**
- * str_l - returns string length
- * @s: string
- * Return: string length
- */
-int str_l(char *s)
-{
-	int x = 0;
 
-	while (s[x] != '\0')
-		x++;
-	return (x);
-}
 /**
- * argstostr - concats arguments of program
- * @ac: takes arguments
- * @av: array of arguments
- * Return: pointer to new string
- **/
+ * argstostr - concatenates all the arguments of program
+ * @ac: no. of args.
+ * @av: pointer to pointer to int char (2nd).
+ *
+ * Return: pointer to new string.
+ */
+
 char *argstostr(int ac, char **av)
 {
+	int i, j, k = 0, l = 0;
 	char *str;
-	int y, x, j;
-	int all = 0;
 
-
-	if (ac == 0 || av == NULL)
+	/* check to see if no. of args <= 0 or av is null */
+	if (ac <= 0 || av == NULL)
 		return (NULL);
-	for (y = 0; y < ac; y++)
-		all += str_l(av[y]) + 1;
-	str = malloc(sizeof(char) * all + 1);
+
+	/* loop through elements row-wise */
+	for (i = 0; i < ac; i++)
+	{
+		/* loop through elements column-wise */
+		for (j = 0; av[i][j]; j++)
+			l++; /* increment for each element on a given row */
+	}
+
+	l += ac + 1; /* add space for \0 */
+
+	str = malloc(sizeof(char) * l); /* allocate mem for string */
+
 	if (str == NULL)
 		return (NULL);
-	for (y = 0, j = 0; y < ac; y++)
+	/* write to new string, row and column-wise */
+	for (i = 0; i < ac; i++)
 	{
-		for (x = 0; av[y][x] != '\0'; x++, j++)
-			str[j] = av[y][x];
-		str[j] = '\n';
-		j++;
+		for (j = 0; av[i][j]; j++) /* write each row */
+		{
+			str[k++] = av[i][j];
+		}
+		str[k++] = '\n'; /* add new line after each row */
 	}
-	str[j] = '\0';
+	/*str[k] = '\0';  append \0 char to last row */
 	return (str);
 }
