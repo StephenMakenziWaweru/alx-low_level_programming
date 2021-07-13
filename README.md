@@ -1,6 +1,6 @@
-ALX SE program
+# ALX SE program
 
-Low level programming using the C language.
+## Low level programming using the C language.
 
 [0. 0x00-hello_world](/0x00-hello_world)
 
@@ -23,3 +23,5 @@ Low level programming using the C language.
 [9. 0x09-static_libraries](/0x09-static_libraries)
 
 [A. 0x0A-argc_argv](/0x0A-argc_argv)
+
+[B. 0x0B-malloc_free](/0x0B-malloc_free)
