@@ -18,3 +18,5 @@
 /0x08-recursion/main
 /0x09-static_libraries/c_files
 /0x0A-argc_argv/main
+/0x0B-malloc_free/main
+/0x0B-malloc_free/_putchar.c
