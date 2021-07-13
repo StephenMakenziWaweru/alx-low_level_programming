@@ -23,10 +23,9 @@ char *argstostr(int ac, char **av)
 		/* loop through elements column-wise */
 		for (j = 0; av[i][j]; j++)
 			l++; /* increment for each element on a given row */
-		l++; /* increment for each element on a column */
 	}
 
-	l++; /* add space for \0 */
+	l += ac + 1; /* add space for \0 */
 
 	str = malloc(sizeof(char) * l); /* allocate mem for string */
 
@@ -35,14 +34,12 @@ char *argstostr(int ac, char **av)
 	/* write to new string, row and column-wise */
 	for (i = 0; i < ac; i++)
 	{
-		for (j = 0; av[i][j]; j++)
+		for (j = 0; av[i][j]; j++) /* write each row */
 		{
-			str[k] = av[i][j];
-			k++;
+			str[k++] = av[i][j];
 		}
-		str[k] = '\n';
-		k++;
+		str[k++] = '\n'; /* add new line after each row */
 	}
-	str[k] = '\0';
+	str[k] = '\0'; /* append \0 char to last row */
 	return (str);
 }
