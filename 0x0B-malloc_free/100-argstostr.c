@@ -40,6 +40,6 @@ char *argstostr(int ac, char **av)
 		}
 		str[k++] = '\n'; /* add new line after each row */
 	}
-	/*str[k] = '\0';  append \0 char to last row */
+	str[k] = '\0';  /*append \0 char to last row */
 	return (str);
 }
