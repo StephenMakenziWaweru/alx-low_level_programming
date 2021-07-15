@@ -12,12 +12,12 @@
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	char *p, *p_tmp;
-	unsigned int len1 , len2;
-	int len_of_str(char *str);
+	unsigned int len1, len2;
 
+	int len_of_str(char *str);
 	len1 = len_of_str(s1);
 	len2 = len_of_str(s2);
-	
+
 	if (len2 > n)
 		len2 = n;
 
@@ -27,7 +27,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 
 	while (*s1)
 		*p_tmp++ = *s1++;
-	
+
 	while (len2--)
 		*p_tmp++ = *s2++;
 
@@ -36,6 +36,11 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	return (p);
 }
 
+/**
+ * len_of_str - returns string length
+ * @str: string whose length is to be returned
+ * Return: string length.
+ */
 int len_of_str(char *str)
 {
 	int len = 0;
