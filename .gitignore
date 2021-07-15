@@ -20,3 +20,6 @@
 /0x0A-argc_argv/main
 /0x0B-malloc_free/main
 /0x0B-malloc_free/_putchar.c
+/0x0B-malloc_free/jeremy.c
+/0x0C-more_malloc_free/main
+/0x0C-more_malloc_free/_putchar

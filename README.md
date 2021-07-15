@@ -25,3 +25,5 @@
 [A. 0x0A-argc_argv](/0x0A-argc_argv)
 
 [B. 0x0B-malloc_free](/0x0B-malloc_free)
+
+[C. 0x0C-more_malloc_free](/0x0C-more_malloc_free)
