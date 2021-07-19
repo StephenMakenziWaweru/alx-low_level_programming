@@ -8,8 +8,6 @@
 
 void free_dog(dog_t *d)
 {
-	unsigned int i;
-
 	if (d)
 	{
 		free(d->name);
