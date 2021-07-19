@@ -14,18 +14,18 @@ dog_t *new_dog(char *name, float age, char *owner)
 {
 	dog_t *p;
 	unsigned int name_len, owner_len, i = 0;
-	unsigned int _strlen(char *str);
 
+	unsigned int _strlen(char *str);
 	if (!name || !owner)
 		return (NULL);
 
 	p = malloc(sizeof(dog_t));
 	if (!p)
 		return (NULL);
-	
+
 	name_len = _strlen(name);
 	owner_len = _strlen(owner);
-	
+
 	p->name = malloc(name_len * sizeof(char));
 	if (!(p->name))
 		return (free(p), NULL);
@@ -61,7 +61,7 @@ unsigned int _strlen(char *str)
 {
 	unsigned int i = 0;
 
-	while(*str++)
+	while (*str++)
 		i++;
 
 	return (i);
