@@ -23,8 +23,8 @@ dog_t *new_dog(char *name, float age, char *owner)
 	if (!p)
 		return (NULL);
 
-	name_len = _strlen(name);
-	owner_len = _strlen(owner);
+	name_len = _strlen(name) + 1;
+	owner_len = _strlen(owner) + 1;
 
 	p->name = malloc(name_len * sizeof(char));
 	if (!(p->name))
