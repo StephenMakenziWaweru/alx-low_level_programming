@@ -23,11 +23,7 @@ int main(int argc, char *argv[])
 
 	while (bytes--)
 	{
-		printf("%02hhx", *ptr++);
-		if (bytes)
-			printf(" ");
-		else
-			printf("\n");
+		printf("%02hhx", *ptr++, b ? " " : "\n");
 	}
 
 	return (0);
