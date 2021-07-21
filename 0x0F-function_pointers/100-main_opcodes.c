@@ -23,7 +23,7 @@ int main(int argc, char *argv[])
 
 	while (bytes--)
 	{
-		printf("%02hhx", *ptr++, bytes ? " " : "\n");
+		printf("%02hhx%s", *ptr++, bytes ? " " : "\n");
 	}
 
 	return (0);
