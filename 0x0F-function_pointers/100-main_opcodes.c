@@ -11,10 +11,9 @@
 
 int main(int argc, char *argv[])
 {
-	char *ptr;
+	char *ptr = (char *)main;
 	int bytes;
 
-	ptr = (char *)main;
 	if (argc != 2)
 		printf("Error\n"), exit(1);
 
