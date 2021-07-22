@@ -30,6 +30,8 @@
 
 [D. 0x0D-preprocessor](/0x0D-preprocessor)
 
-[0x0E-structures_typedef](/0x0E-structures_typedef)
+[E. 0x0E-structures_typedef](/0x0E-structures_typedef)
 
-[0x0F-function_pointers](/0x0F-function_pointers)
+[F. 0x0F-function_pointers](/0x0F-function_pointers)
+
+[10. 0x10-variadic_functions](/0x10-variadic_functions)
