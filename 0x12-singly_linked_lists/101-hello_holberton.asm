@@ -1,21 +1,12 @@
-; 101-hello_holberton.asm
-;
-; prints "Hello, Holberton"
+	global 	main
+	extern 	printf
 
-global main
-
-section .text:
+	section .text
 main:
-	mov eax, 0x04		; use the write syscall
-	mov ebx, 1		; use stdout as the fd
-	mov ecx, message	; use msg as buffer
-	mov edx, len		; provide length
-	int 0x80
-	
-	mov eax, 0x01
-	mov ebx, 0
-	int 0x80
-
-section .data:
-	message: db "Hello, Holberton", 0x0A
-	len equ $ - message 
+	mov	rdi, format
+	mov	rax, 0
+	call	printf
+	mov	rax, 0
+	ret
+format:
+	db "Hello, Holberton", 10, 0
