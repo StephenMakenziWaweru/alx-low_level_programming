@@ -10,7 +10,7 @@
 
 list_t *add_node_end(list_t **head, const char *str)
 {
-	char *s = strdup(str);
+	const char *s = str;
 	list_t *tmp, *loop;
 	size_t len = 0;
 
