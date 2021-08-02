@@ -1,7 +1,7 @@
 # 0x13. C - More singly linked lists
 ## Resources
 ### Read or watch 
- - [Google](200~https://www.google.com/#q=linked+lists)
+ - [Google](https://www.google.com/#q=linked+lists)
  - [Youtube](https://www.youtube.com/results?search_query=linked+lists)
 ## Learning Objectives
 At the end of this project, you are expected to be able to explain to anyone, without the help of Google:
