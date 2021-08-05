@@ -1,5 +1,5 @@
 #include "holberton.h"
-#include <stdio.h>
+
 /**
  * _pow - returns the value of a number raised to some power.
  * @base: base.
