@@ -7,28 +7,20 @@
 
 void print_binary(unsigned long int n)
 {
-	int bin[SIZE], i = SIZE - 1;
+	unsigned long int mask = 1;
+	char start_zero = 0;
 
-	while (i >= 0)
+	mask <<= (sizeof(unsigned long int) * 8 - 1);
+	while (mask)
 	{
-		bin[i] = n & 1;
-		i--;
-		n >>= 1;
-	}
-
-	for (i = 0; i < SIZE; i++)
-	{
-		if (bin[i] == 1)
-			break;
-	}
-
-	if (i == SIZE)
-		_putchar('0');
-	else
-	{
-		for (; i < SIZE; i++)
-			_putchar(bin[i] + '0');
+		if ((n & mask) == mask)
+		{
+			start_zero = 1;
+			_putchar('1');
+		}
+		else if (start_zero == 1 || mask == 1)
+			_putchar('0');
+		mask >>= 1;
 	}
 }
-
 
