@@ -4,7 +4,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
-#include <string.h>
 
 /**
  * _close - closes open fd.
@@ -72,9 +71,11 @@ int _cp(const char *file_from, const char *file_to)
 			dprintf(2, "Error: Can't write to %s\n", file_to);
 			exit(99);
 		}
-		memset(buf, 0, 1024);
 		if (wr != rd)
+		{
+			dprintf(2, "Error: Can't write to %s\n", file_to);
 			exit(99);
+		}
 	}
 	_close(fd_from, fd_to);
 	return (1);
