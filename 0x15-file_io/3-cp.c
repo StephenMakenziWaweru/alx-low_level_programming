@@ -32,13 +32,10 @@ void _close(int fd_from, int fd_to)
  * _cp - copies the contents of a file to another file.
  * @file_from: file to copy from.
  * @file_to: file to copy to.
- *
- * Return: 1 on success, -1 on failure.
  */
-int _cp(const char *file_from, const char *file_to)
+void _cp(const char *file_from, const char *file_to)
 {
-	int rd = 1024, wr, fd_from, fd_to;
-	char buf[1024];
+	int rd = 1024, wr, fd_from, fd_to, char buf[1024];
 
 	if (!file_from)
 	{
@@ -78,7 +75,6 @@ int _cp(const char *file_from, const char *file_to)
 		}
 	}
 	_close(fd_from, fd_to);
-	return (1);
 }
 
 /**
