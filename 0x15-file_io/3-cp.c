@@ -37,7 +37,7 @@ void _close(int fd_from, int fd_to)
  */
 int _cp(const char *file_from, const char *file_to)
 {
-	int rd = 1, wr, fd_from, fd_to;
+	int rd = 1024, wr, fd_from, fd_to;
 	char buf[1024];
 
 	if (!file_from)
@@ -57,7 +57,7 @@ int _cp(const char *file_from, const char *file_to)
 		dprintf(2, "Error: Can't write to %s\n", file_to);
 		exit(99);
 	}
-	while (rd)
+	while (rd == 1024)
 	{
 		rd = read(fd_from, buf, 1024);
 		if (rd == -1)
