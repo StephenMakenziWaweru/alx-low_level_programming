@@ -52,7 +52,7 @@ int _cp(const char *file_from, const char *file_to)
 		dprintf(2, "Error: Can't read from file %s\n", file_from);
 		exit(98);
 	}
-	fd_to = open(file_to, O_WRONLY | O_CREAT | O_TRUNC, 0660);
+	fd_to = open(file_to, O_WRONLY | O_CREAT | O_TRUNC, 0664);
 	if (fd_to == -1)
 	{
 		dprintf(2, "Error: Can't write to %s\n", file_to);
@@ -92,7 +92,7 @@ int main(int argc, char **argv)
 {
 	if (argc != 3)
 	{
-		dprintf(2, "Usage: cp file_from file_to\n");
+		dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
 		exit(97);
 	}
 
