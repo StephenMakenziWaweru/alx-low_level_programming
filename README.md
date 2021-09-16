@@ -1,5 +1,5 @@
 # ALX SE program
-<img src="/0x00-hello_world/C_prog.png" width="100%">
+<img src="/0x00-hello_world/C_prog.png" text-align="center">
 
 ## Low level programming using C Programming language.
 
