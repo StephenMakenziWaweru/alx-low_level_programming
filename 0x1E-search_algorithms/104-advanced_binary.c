@@ -10,14 +10,14 @@
  */
 int *adv_b(int *array, size_t size, int value)
 {
-    size_t i = 0;
+	size_t i = 0;
 
-    if (!size || !array)
-        return (NULL);
-    for (printf("Searching in array: "); i < size; i++)
+	if (!size || !array)
+	return (NULL);
+	for (printf("Searching in array: "); i < size; i++)
 		printf("%d%s", array[i], i + 1 == size ? "\n" : ", ");
-    
-    i = (size - 1) / 2;
+
+	i = (size - 1) / 2;
 	if (array[i] == value)
 	{
 		if (i)
@@ -40,10 +40,10 @@ int *adv_b(int *array, size_t size, int value)
  */
 int advanced_binary(int *array, size_t size, int value)
 {
-    int *arr = adv_b(array, size, value);
+	int *arr = adv_b(array, size, value);
 
-    if (!arr)
-        return (-1);
-    else
-        return (arr - array);
+	if (!arr)
+	return (-1);
+	else
+	return (arr - array);
 }
